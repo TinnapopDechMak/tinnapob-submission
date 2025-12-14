@@ -25,6 +25,7 @@ export default function Page() {
     }
   }
 
+  const balance = totalIncome - totalExpense;
   const sorted = [...transactions].sort(
     (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
   );
