@@ -1,36 +1,37 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Transaction Dashboard (Next.js + TypeScript + Tailwind)
 
-## Getting Started
+ทำขึ้นเพื่อออกแบบ Transaction Dashboard UI ตาม assignment
 
-First, run the development server:
+---
 
+## 1. Setup Instructions
+
+### Prerequisites
+- Node.js (v18 or later recommended)
+- npm
+
+### Install & Run
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 2. Design Decisions
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Approach
+- ออกแบบให้ดูใช้งานง่ายไม่ซับซ้อน
+- หน้า UI เป็นแบบ Page เดียวเข้าใจง่าย
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Trade-offs
+- ไม่เหมาะกับ project ขนาดใหญ่
+- UI/UX เป็นแค่พื้นฐานไม่สามารถ interactive และไม่มี animation
 
-## Learn More
+## 3. What You'd Improve
+- อยากเพิ่ม function daily, month, year
+- อยากให้มี UI ที่ดีกว่านี้มี Interactive มี animation
+- เชื่อม backend API
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 4.Time Spent
+- Project setup (Next.js + Tailwind): ~10 minutes
+- Writing data structure and calculation logic: ~20 minutes
+- UI layout: ~20 minutes
